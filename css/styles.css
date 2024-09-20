@@ -1,6 +1,69 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* Personalizacion navbar */
+/* Personalizar el color de fondo */
+.bg-custom {
+  background-color: #003366 !important;
 }
 
+/* Personalizar la fuente */
+.navbar,
+.navbar-brand,
+.navbar-nav .nav-link {
+  font-family: "Montserrat", sans-serif !important;
+  color: #fff !important;
+  /* Cambiar el color del texto a blanco */
+}
+
+/* Personalizar el color del enlace activo */
+.navbar-nav .nav-link.active {
+  color: #ffc107 !important;
+  /* Cambiar el color del enlace activo a amarillo */
+}
+
+.omni-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+}
+
+@media (max-width: 575px) {
+  #player {
+    width: 360px;
+    height: 250px;
+  }
+}
+
+/* @media (min-width: 576px) and (max-width: 767px) {
+  #player {
+    width: 640px;
+    height: 360px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #player {
+    width: 640px;
+    height: 360px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #player {
+    width: 640px;
+    height: 360px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  #player {
+    width: 640px;
+    height: 360px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #player {
+    width: 800px;
+    height: 500px;
+  }
+} */
