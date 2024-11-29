@@ -1,0 +1,71 @@
+/* Contenedor de los comentarios */
+#commentsContainer {
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Títulos */
+  #commentsContainer h3 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  /* Inputs de texto */
+  #username, #commentInput {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  
+  /* Botón de enviar */
+  #sendButton {
+    display: block;
+    width: 100px;
+    padding: 10px 15px;
+    margin: 10px auto;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #sendButton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Lista de comentarios */
+  #commentList {
+    margin-top: 20px;
+  }
+  
+  #commentList .comment {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  
+  #commentList .comment strong {
+    color: #007bff;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #commentList .comment p {
+    margin: 0;
+    color: #555;
+  }
+  
