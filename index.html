@@ -1,23 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Transmisión en vivo</title>
-  <link href="https://unpkg.com/video.js@latest/dist/video-js.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/video.js@latest/dist/video-js.min.css" rel="stylesheet" />
   <script src="https://unpkg.com/video.js@latest/dist/video.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/comentarios.css" />
 </head>
 
 <body>
-
   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-custom">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="/image/logo.webp" alt="Bootstrap" width="35" height="35">
+        <img src="/image/logo.webp" alt="Bootstrap" width="35" height="35" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,16 +39,27 @@
         <source src="https://transmision.omnivision.com.sv/hls/stream.m3u8" type="application/x-mpegURL" />
       </video>
     </div>
+
+    <!-- Comentarios en tiempo real -->
+    <div id="commentsContainer">
+      <h3>Comentarios</h3>
+      <form id="commentForm">
+        <input type="text" id="username" placeholder="Ingresa tu nombre" required />
+        <textarea id="commentInput" placeholder="Escribe tu comentario..." required></textarea>
+        <button type="submit" id="sendButton">Enviar</button>
+      </form>
+      <div id="commentList">
+        <!-- Aquí se mostrarán los comentarios -->
+      </div>
+    </div>
   </section>
 
+  <script type="module" src="/js/firebaseConfig.js"></script>
+  <script type="module" src="/js/app.js"></script>
   <script>
-    var player = videojs('#player');
+    var player = videojs("#player");
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
